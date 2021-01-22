@@ -1,6 +1,11 @@
-a{
+a {
     text-decoration: none;
 }
+
+#portfolio-studio  a {
+    color: #1a73e8;
+} 
+
 ul{
     list-style-type: none;
     padding: 0px;
@@ -60,10 +65,15 @@ margin-right: 0px;
     color:#2196F3;
 }
 .hero{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
     margin-bottom: 80px;
     text-align: center;
     background-color: #2F303A;
-    background-image: url(../img/foto.jpg);
     height: 600px;
     max-width: 1600px;
 }
@@ -72,101 +82,89 @@ h1{
     margin-top: 0px;
     margin-bottom: 30px;
     color: #ffffff;
+    font-size: 44px;
 }
-.hero a{
-    margin-top: 350px;
+
+.hero a {
     background-color: #2196F3;
     color: #ffffff;
     padding: 10px 32px;
     border: none;
     border-radius: 4px;
 }
-h3{
+
+h3 {
     margin-top: 0px;
     margin-bottom: 10px;
 }
+
 .about{
     display: inline-flex;
     margin-top: 0px;
     margin-bottom: 94px;
 }
+
 .skills{
-    height: 251px;
+    height: 101px;
     width: 270px;
 }
-.icon-antenna::before{
-    display: flex;
-    content: "";
-    height: 70px;
-    width: 70px;
-    background-image: url(../img/antenna.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 0px;
-}
-.icon-clock::before{
-    display: flex;
-    content: "";
-    height: 70px;
-    width: 70px;
-    background-image: url(../img/clock.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.icon-diagram::before{
-    display: flex;
-    content: "";
-    margin: 0px;
-    height: 70px;
-    width: 70px;
-    background-image: url(../img/diagram.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.icon-astronaut::before{
-    display: flex;
-    content: "";
-    height: 70px;
-    width: 70px;
-    background-image: url(../img/astronaut.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
-.about.skills + .skills{
+
+.about .skills + .skills{
     margin-left: 30px;
 }
+
 .about p{
     margin-top: 0px;
     margin-bottom: 0px;
     width: 270px;
     color: #757575;
 }
+
 h2{
     text-align: center;
     margin-top: 0px;
     margin-bottom: 50px;  
 }
+
 .activity {
-    margin-bottom: 188px;
+    margin-bottom: 94px;
 }
+
 .activity-main{
     display: flex;
 }
+
 .activity-main li + li{
     margin-left: 30px;
 }
 
-.command-all{
-    background-color: #F5F4FA;
+.member {
+    width: 270px;
+    height: 368px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
+
+.command-all{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    background-color: #F5F4FA;
+    background-position: center;
+    height: 708px;
+    max-width: 1600px;
+    margin: auto;
+    margin-bottom: 94px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 .command-all img{
     margin-bottom: 30px;
 }
+
 .command-all p{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -175,7 +173,7 @@ h2{
 .command{
     display: flex;
     text-align: center;
-    margin-bottom: 93px;
+    justify-content: center;
 }
 
 .command .member + .member{
@@ -190,11 +188,14 @@ p.profession{
 }
 footer{
     background-color: #2F303A;
-}
-.nav-footer{
-    width: 1170px;
+    max-width: 1600px;
     margin: auto;
 }
+
+.nav-footer{
+    display: inline-block;
+}
+
 .nav-footer img{
     margin-top: 60px;
     margin-bottom: 20px;
@@ -255,20 +256,32 @@ footer p{
     margin-top: 50px;
     margin-bottom: 94px;
 }
-.content{
+
+.content {
     margin-right: 30px;
     margin-bottom: 30px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
 }
-.content:nth-child(3n){
+
+.content:nth-child(3n) {
     margin-right: 0px;
 }
-.content:nth-last-child(-n + 3){
+
+.content:nth-last-child(-n + 3) {
     margin-bottom: 0px;
 }
-.content p{
+
+.content p {
     color: #757575;
     margin-top: 4px;
 }
-h3{
+
+.content p, h3 {
+    margin-left: 24px;
+}
+
+h3 {
     margin-top: 20px;
 }

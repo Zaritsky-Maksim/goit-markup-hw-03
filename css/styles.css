@@ -115,12 +115,13 @@ h1{
 
 }
 
-.hero a {
+.hero button {
     background-color: #2196F3;
     color: #ffffff;
     padding: 10px 32px;
     border: none;
     border-radius: 4px;
+    font-family: inherit;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.87;

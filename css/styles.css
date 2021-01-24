@@ -204,7 +204,7 @@ h2{
     background-color: #F5F4FA;
     background-position: center;
     height: 708px;
-    max-width: 1600px;
+    width: 1600px;
     margin: auto;
     margin-bottom: 94px;
     padding-right: 15px;
@@ -247,8 +247,10 @@ p.profession{
 footer{
     background-color: #2F303A;
     height: 252px;
-    max-width: 1600px;
+    width: 1600px;
     margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .nav-footer{
